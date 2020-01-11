@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Hiding Text in Image</title>
-		<link href="https://mambo.in.ua/map/data/bootstrap4/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<style>
 			.l {
@@ -34,7 +34,7 @@
 									image.onload = function() {
 
 										maxTextSize = parseInt(this.width * this.height * 0.375) - 1;// wh * 3 / 8.   3 - rgb   8 - bits in 1 charheight);
-										
+
 								  $('#inputText').attr('maxlength',maxTextSize);
 								  $('#maxLength').text('Max text length: '+maxTextSize);
 
@@ -158,7 +158,7 @@
 
 //0         1         2         3
 //☺☻♥♦♣♠•◘○◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔▲▼
-//                  ‼  ▬↨     ↔  
+//                  ‼  ▬↨     ↔
 
 						$inputText = $_POST['inputText'];
 						//$inputText .= '↔';//29
